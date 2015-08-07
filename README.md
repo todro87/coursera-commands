@@ -149,4 +149,41 @@
 * x[x>2] - pobranie wszystkich elementów wiêkszych ni¿ dwa
 * u <- x > 2 - stworzenie wektora logicznego u, który pokazuje które elementy s¹ wiêksze ni¿ 2
 * x[u] - pobranie elementów spe³niaj¹cych regu³ê wektora u
-
+* x <- list(foo=1:4, bar=0.6, baz="hello")
+* x[1] - zwraca listê
+* x[[1]] - zwraca sekwencjê (wektor?)
+* x$bar - dzia³a jak x[[2]], zwraca wektor
+* x[["bar"]] - dzia³a jak x$bar, zwraca wektor
+* x["bar"] - zwraca listê
+* x[c(1,3)] - zwraca elementy 1 i 3 listy
+* x[1:3] - zwraca elementy od 1 do 3 listy
+* name <- "foo"
+* x[[name]] - zadzia³a ze zmienn¹ name
+* x$name - nie zadzia³a ze zmienn¹ name, nie ma jej na liœcie
+* x <- list(a=list(10,12,14), b=c(3.14,2.81))
+* x[[c(1,3)]] - pobranie elemetu trzeciego z elementu pierwszego listy, 14
+* x[[1]][[3]] - to samo co powy¿ej, 14
+* x <- matrix(1:6,2,3)
+* x[1,2] - pobranie elementu z pierwszego wiersza i drugiej kolumny macierzy
+* x[1,] - pobranie pierwszego wiersza macierzy
+* x[,2] - pobranie drugiej kolumny macierzy
+* x[1,2,drop=F] - zachowuje wynik w postaci macierzy
+* x[1,,drop=F] - jak wy¿ej
+* x <- list(aardvark=1:5)
+* x$a - zadzia³a z powy¿sz¹ list¹, szuka nazwy na a
+* x[["a"]] - nie zadzia³a, bo dopasowanie jest dok³adne
+* x[["a", exact=F]] - zadzia³a
+* x["a", exact=F] - nie zadzia³a bo R myœli, ¿e podajemy dwa argumenty
+* x <- c(1,2,NA,4,NA,5)
+* bad <- is.na(x)
+* x[!bad] - zwraca elementy, które nie s¹ NA
+* x[bad] - zwraca elementy, które s¹ NA
+* good  <- complete.cases(x,y) - je¿elix i y maj¹ NA na tym samym miejscu to wektor good jest wwktoremlogicznym z F na miejscach NA, sprawdza, które wiersze lub kolumny s¹ kompletne
+* x <- 1:4; y <- 6:9
+* x+y - dodanie wektorów
+* x>2 - sprawdza, które elementy s¹ wiêksze ni¿ 2
+* y==8 - sprawdza, który element jest równy 8
+* x * y - pomno¿enie wektorów
+* x/y - podzielenie wektorów
+* dla macierz x * y mno¿y elementy przez siebie, x/y dzieli je
+* x %*% y - mno¿enie macierzowe
