@@ -2,52 +2,52 @@
 
 ## CLI:
 
-mkdir
-ls
-rm
-cp
-touch
-mv
-cd
-echo
-date
-clear
-pwd
+*mkdir
+*ls
+*rm
+*cp
+*touch
+*mv
+*cd
+*echo
+*date
+*clear
+*pwd
 
 ## GIT:
 
-git config --global user.name "todro87"
-git config --global user.email "tmszdrbzg@gmail.com"
-git config --list
-exit
-git init - inicjalizacja folderu jako folder dla repozytoriów
-git remote add origin https://github.com/todro87/test-repo.git - po³¹czenie repozytorium lokalnego i zdalnego
-git clone https://github.com/todro87/test-repo.git - klonowanie repozytorium na komputer
+*git config --global user.name "todro87"
+*git config --global user.email "tmszdrbzg@gmail.com"
+*git config --list
+*exit
+*git init - inicjalizacja folderu jako folder dla repozytoriów
+*git remote add origin https://github.com/todro87/test-repo.git - po³¹czenie repozytorium lokalnego i zdalnego
+*git clone https://github.com/todro87/test-repo.git - klonowanie repozytorium na komputer
 
-git add . - informuje Git, ¿e nale¿y œledziæ wszystkie nowe pliki
-git add -u - jak wy¿ej, ale dla plików, które zosta³y usuniête lub zmieniono im nazwê
-git add -A - robi to co dwa powy¿ej
-git commit -m "message" - zapisuje wersjê repo z wiadomoœci¹, tylko dla lokalnego repozytorium
-git push - wysy³a zmiany do zdalnego repo
-git checkout -b branchname - stworzenie nowej odnogi repo
-git branch - sprawdzenie, na której odnodze jesteœmy
-git checkout master - prze³¹czenie do g³ównej odnogi
-git status - wyœwietla status zmian w kolejce
-git log - 
-git push -u origin master
-git diff HEAD - wyœwietla ró¿nice pomiêdzy zmianami innych u¿ytkowników a naszymi
-git diff --staged - wyœwietla pliki gotowe do wys³ania
-git reset file - usuwa plik z listy do za³adowania
-git branch name - tworzy now¹ ga³¹Ÿ
-git branch - wyœwietla ga³êzie
-git checkout name - zmienia ga³¹Ÿ
-git rm name - ustawia usuwanie plików w kolejce
-git merge name - ³¹czy ga³¹Ÿ name z aktywn¹
-git branch -d name - usuwa ga³¹Ÿ name lokalnie
-git push origin --delete name - usuwa zdaln¹ ga³¹Ÿ name
-origin - domyœlna nazwa aktywnego repozytorium
-git remote rm name - usuwa remote name
-git remote rename name1 name2 - zmiana name1 na name2
+*git add . - informuje Git, ¿e nale¿y œledziæ wszystkie nowe pliki
+*git add -u - jak wy¿ej, ale dla plików, które zosta³y usuniête lub zmieniono im nazwê
+*git add -A - robi to co dwa powy¿ej
+*git commit -m "message" - zapisuje wersjê repo z wiadomoœci¹, tylko dla lokalnego repozytorium
+*git push - wysy³a zmiany do zdalnego repo
+*git checkout -b branchname - stworzenie nowej odnogi repo
+*git branch - sprawdzenie, na której odnodze jesteœmy
+*git checkout master - prze³¹czenie do g³ównej odnogi
+*git status - wyœwietla status zmian w kolejce
+*git log - 
+*git push -u origin master
+*git diff HEAD - wyœwietla ró¿nice pomiêdzy zmianami innych u¿ytkowników a naszymi
+*git diff --staged - wyœwietla pliki gotowe do wys³ania
+*git reset file - usuwa plik z listy do za³adowania
+*git branch name - tworzy now¹ ga³¹Ÿ
+*git branch - wyœwietla ga³êzie
+*git checkout name - zmienia ga³¹Ÿ
+*git rm name - ustawia usuwanie plików w kolejce
+*git merge name - ³¹czy ga³¹Ÿ name z aktywn¹
+*git branch -d name - usuwa ga³¹Ÿ name lokalnie
+*git push origin --delete name - usuwa zdaln¹ ga³¹Ÿ name
+*origin - domyœlna nazwa aktywnego repozytorium
+*git remote rm name - usuwa remote name
+*git remote rename name1 name2 - zmiana name1 na name2
 
 ## MARKDOWN:
 
@@ -61,92 +61,92 @@ git remote rename name1 name2 - zmiana name1 na name2
 
 ## R:
 
-install.packages("name") - instalowanie pakietu
-library(name) - za³adowanie pakietu
+*install.packages("name") - instalowanie pakietu
+*library(name) - za³adowanie pakietu
 
-getwd()
-setwd(path) - ustawiwa domyœlny folder do pracy
-dir() - zawartoœæ folderu
-ls() - funkcje i zmienne w projekcie
-source("file") - dodanie skryptu
+*getwd()
+*setwd(path) - ustawiwa domyœlny folder do pracy
+*dir() - zawartoœæ folderu
+*ls() - funkcje i zmienne w projekcie
+*source("file") - dodanie skryptu
 
-: - np. 1:20 sekwencja liczb od 1 do 20
-1 -liczba zmiennoprzecinkowa
-1L - liczba ca³kowita
+*: - np. 1:20 sekwencja liczb od 1 do 20
+*1 -liczba zmiennoprzecinkowa
+*1L - liczba ca³kowita
 
-c() - wektor, z dowoln¹ liczb¹ argumentów, np. c(1,2) to wektor liczb 1 i 2
-vector("numeric",length=10) - pusty wektor 10 liczb zmiennoprzecinkowych
-class(arg) - sprawdza klasê argumentu
-as.numeric(arg) - argument jako numeryczny
-as.logical(arg) - argument jako logiczny
-as.character(arg) - argument jako tekst
-list(arg1, arg2, arg3, ...) - tworzy listê
+*c() - wektor, z dowoln¹ liczb¹ argumentów, np. c(1,2) to wektor liczb 1 i 2
+*vector("numeric",length=10) - pusty wektor 10 liczb zmiennoprzecinkowych
+*class(arg) - sprawdza klasê argumentu
+*as.numeric(arg) - argument jako numeryczny
+*as.logical(arg) - argument jako logiczny
+*as.character(arg) - argument jako tekst
+*list(arg1, arg2, arg3, ...) - tworzy listê
 
-matrix(nrow=x,ncol=y) - macierz o wymiarach x:y
-attributes(arg) - w przypadku macierzy wyœwietla jej wymiar
-dim(arg) - podaje wymiar arg
-m <- 1:10 - wektor od 1 do 10
-dim(m) <- c(2,5) - nadanie wektorowi m wymiaru 2:5
-cbind(x,y) - stworzenie macierzy z wektorów x i y kolumnowo
-rbind(x,y) - j.w., tyle, ¿e wierszowo
+*matrix(nrow=x,ncol=y) - macierz o wymiarach x:y
+*attributes(arg) - w przypadku macierzy wyœwietla jej wymiar
+*dim(arg) - podaje wymiar arg
+*m <- 1:10 - wektor od 1 do 10
+*dim(m) <- c(2,5) - nadanie wektorowi m wymiaru 2:5
+*cbind(x,y) - stworzenie macierzy z wektorów x i y kolumnowo
+*rbind(x,y) - j.w., tyle, ¿e wierszowo
 
-x <- factor(c("yes","yes","no","yes","yes")) - stworzenie zmiennej factor z dwoma poziomami yes i no
-table(x) - pokazuje ile jest wyst¹pieñ poziomów w zmiennej factor
-unclass(x) - zamienia zmienn¹ factor na wektor liczb ca³kowitych
-attr(x,"levels") - pokazuje atrybuty poziomów zmiennej factor
-x <- factor(c("yes","yes","no","yes","yes"),levels=c("yes","no")) - zmienna faktor z narzucon¹ kolejnoœci¹ poziomów, bez narzucenia kolejnoœæ jest alfabetyczna
+*x <- factor(c("yes","yes","no","yes","yes")) - stworzenie zmiennej factor z dwoma poziomami yes i no
+*table(x) - pokazuje ile jest wyst¹pieñ poziomów w zmiennej factor
+*unclass(x) - zamienia zmienn¹ factor na wektor liczb ca³kowitych
+*attr(x,"levels") - pokazuje atrybuty poziomów zmiennej factor
+*x <- factor(c("yes","yes","no","yes","yes"),levels=c("yes","no")) - zmienna faktor z narzucon¹ kolejnoœci¹ *poziomów, bez narzucenia kolejnoœæ jest alfabetyczna
 
-is.na(arg) - sprawdza czy obiekt ma brakuj¹ce wartoœci
-is.nan(arg) - sprawdza czy obiekt jest NaN
+*is.na(arg) - sprawdza czy obiekt ma brakuj¹ce wartoœci
+*is.nan(arg) - sprawdza czy obiekt jest NaN
 
-x <- data.frame(foo=1:4, bar=(T,T,F,F)) - stworzenie ramkni danych z kolumn¹ foo i bar
-nrow(x) - zwraca liczbê wierszy ramki danych
-ncol(x) - zwraca liczbê kolumn ramki danych
+*x <- data.frame(foo=1:4, bar=(T,T,F,F)) - stworzenie ramkni danych z kolumn¹ foo i bar
+*nrow(x) - zwraca liczbê wierszy ramki danych
+*ncol(x) - zwraca liczbê kolumn ramki danych
 
-names(x) <- c("a", "b","c") - nadanie elementom wetkora x nazw a, b, c
-x <- list(a=1, b=2, c=3) - stworzenie listy z elementami o nazwach a,b,c i wartoœciach 1,2,3
-m <- matrix(1:4, nrow=2, ncol=2)
-dimnames(m) <- list(c("a","b"),c("c","d")) - nadanie wierszom i kolumano macierzy nazw a,b,c,d
+*names(x) <- c("a", "b","c") - nadanie elementom wetkora x nazw a, b, c
+*x <- list(a=1, b=2, c=3) - stworzenie listy z elementami o nazwach a,b,c i wartoœciach 1,2,3
+*m <- matrix(1:4, nrow=2, ncol=2)
+*dimnames(m) <- list(c("a","b"),c("c","d")) - nadanie wierszom i kolumano macierzy nazw a,b,c,d
 
-read.table
-read.csv - separatorem jest przecinek
-readLines
-source
-dget
-load
-unserialize
+*read.table
+*read.csv - separatorem jest przecinek
+*readLines
+*source
+*dget
+*load
+*unserialize
 
-write.table
-writeLines
-dump
-dput
-save
-serialize
+*write.table
+*writeLines
+*dump
+*dput
+*save
+*serialize
 
-data <- read.table("data.txt")
-opcja comment.char="" informuje read.table, ¿e w pliku nie ma komentarzy, przyœpiesza to wczytywania du¿ych zbiorów danych
-colClasses="klasa danych" - wczeœniejsze podanie typów danych te¿ przyœpiesza wczytywanie
+*data <- read.table("data.txt")
+*opcja comment.char="" informuje read.table, ¿e w pliku nie ma komentarzy, przyœpiesza to wczytywania *du¿ych zbiorów danych
+*colClasses="klasa danych" - wczeœniejsze podanie typów danych te¿ przyœpiesza wczytywanie
 
-dput(y) - wyœwietla zmienn¹ y w formacie tekstowym z ca³¹ jej stryktur¹
-dput(y,file="y.R") - zapisuje zmienn¹ w formacie tekstowym w pliku y.R
-new.y <- dget("y.R") - zapisuje zmienn¹ y z pliku y.R do zmiennej new.y
-dump(c("x","y"), file="data.R") - zapisuje zmienne x i y do pluku data.R w sposób zdekonstruowany
-rm(x,y) - usuwa zmienne x i y z pamiêci
-source("data.R") - wczytuje plik data, w którym s¹ zmienne x i y, co sprawia, ¿e zmienne s¹ ponownie dostêpne
+*dput(y) - wyœwietla zmienn¹ y w formacie tekstowym z ca³¹ jej stryktur¹
+*dput(y,file="y.R") - zapisuje zmienn¹ w formacie tekstowym w pliku y.R
+*new.y <- dget("y.R") - zapisuje zmienn¹ y z pliku y.R do zmiennej new.y
+*dump(c("x","y"), file="data.R") - zapisuje zmienne x i y do pluku data.R w sposób zdekonstruowany
+*rm(x,y) - usuwa zmienne x i y z pamiêci
+*source("data.R") - wczytuje plik data, w którym s¹ zmienne x i y, co sprawia, ¿e zmienne s¹ ponownie dostêpne
 
-con <- file("foo.txt", "r") - otwiera po³¹czenie do pliku foo.txt w trybie czytania
-data <- read.csv(con) - wczytuje plik z po³aczenia do data
-close(con) - zamyka po³¹czenie
-# s¹ ró¿ne typy po³¹czeñ, gzfile tworzy po³¹czenie z plikiem gz, który mo¿na przeczytaæ póŸniej funkcj¹ reaLines()
-con <- url("http://www.wp.pl") - tworz¹ po³¹czenie ze stron¹ www
-x <- readLines(con)
-head(x)
+*con <- file("foo.txt", "r") - otwiera po³¹czenie do pliku foo.txt w trybie czytania
+*data <- read.csv(con) - wczytuje plik z po³aczenia do data
+*close(con) - zamyka po³¹czenie
+###s¹ ró¿ne typy po³¹czeñ, gzfile tworzy po³¹czenie z plikiem gz, który mo¿na przeczytaæ póŸniej funkcj¹ reaLines()
+*con <- url("http://www.wp.pl") - tworz¹ po³¹czenie ze stron¹ www
+*x <- readLines(con)
+*head(x)
 
-x <- c(arg1, arg2,...)
-x[1] - pobranie elementu pierwszego z wektora x
-x[2] - pobranie elementu drugiego z wektora x
-x[1:4] - pobranie elementów od 1 do 4
-x[x>2] - pobranie wszystkich elementów wiêkszych ni¿ dwa
-u <- x > 2 - stworzenie wektora logicznego u, który pokazuje które elementy s¹ wiêksze ni¿ 2
-x[u] - pobranie elementów spe³niaj¹cych regu³ê wektora u
+*x <- c(arg1, arg2,...)
+*x[1] - pobranie elementu pierwszego z wektora x
+*x[2] - pobranie elementu drugiego z wektora x
+*x[1:4] - pobranie elementów od 1 do 4
+*x[x>2] - pobranie wszystkich elementów wiêkszych ni¿ dwa
+*u <- x > 2 - stworzenie wektora logicznego u, który pokazuje które elementy s¹ wiêksze ni¿ 2
+*x[u] - pobranie elementów spe³niaj¹cych regu³ê wektora u
 
