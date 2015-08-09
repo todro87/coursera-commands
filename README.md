@@ -68,6 +68,7 @@
 * setwd(path) - ustawiwa domyœlny folder do pracy
 * dir() - zawartoœæ folderu
 * ls() - funkcje i zmienne w projekcie
+* rm(list=ls()) - usuniêcie zmiennych i funkcji z projektu
 * source("file") - dodanie skryptu
 
 * : - np. 1:20 sekwencja liczb od 1 do 20
@@ -187,3 +188,24 @@
 * x/y - podzielenie wektorów
 * dla macierz x * y mno¿y elementy przez siebie, x/y dzieli je
 * x %*% y - mno¿enie macierzowe
+* args(function) - pokazuje argumwnty, które przyjmuje funkcja
+* dir.create("name") - tworzy katalog name w WD
+* file.create("name") - tworzy plik name
+* file.exists("name") - sprawdza czy plik name istnieje
+* file.info("name") - wyœwietla informacje o pliku name
+* file.rename("name1","name2") - zmienia nazwê pliku z name1 na name2
+* file.copy("name1","name2") - tworzy kopiê pliku name1 jako plik name2
+* file.path("name") - podaje œcie¿kê pliku name
+* file.path("folder1","folder2") - tworzy œcie¿kê folder1/folder2
+* dir.create(file.path("folder1","folder2"), recursive=TRUE) - tworzy œcie¿kê folder1/folder2, recursive po to, ¿eby utworzyæ oba foldery
+* unlink("name", recursive=TRUE) - usuwa folder name, recursive po to, ¿eby usun¹æ równie¿ wewnêtrzne foldery
+* ?function_name - w³¹czenie pomocy dla funkcji
+* ?`:` - w³¹czenie pomocy dla operatora, w tym przypadku :
+* sqe(0,10,by=0.5) - liczby od 0 do 10 co 0.5
+* seq_along(vector) - stworzenie sekwencji liczb d³ugiej jak vector
+* rep(0,times=40) - powtarza 0 40 razy
+* paste(vector, collapse=" ") - ³¹czy elementy vector u¿ywaj¹c spacji
+* paste(word1, word2, sep=" ") - ³¹czy dwa s³owa u¿ywaj¹c spacji
+* LETTERS - predefiniowana zmienna w R z wszystkimi literami
+* sample(vector1, vector3, n) - wybiera n losowych wartoœci z vector1 i vector2
+* sum(is.na(vector)) - zlicza wyst¹pienia NA licz¹c sumê vector, R traktuje TRUE jako 1 a FALSE jako 0
