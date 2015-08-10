@@ -201,7 +201,7 @@
 * unlink("name", recursive=TRUE) - usuwa folder name, recursive po to, ¿eby usun¹æ równie¿ wewnêtrzne foldery
 * ?function_name - w³¹czenie pomocy dla funkcji
 * ?`:` - w³¹czenie pomocy dla operatora, w tym przypadku :
-* sqe(0,10,by=0.5) - liczby od 0 do 10 co 0.5
+* seq(0,10,by=0.5) - liczby od 0 do 10 co 0.5
 * seq_along(vector) - stworzenie sekwencji liczb d³ugiej jak vector
 * rep(0,times=40) - powtarza 0 40 razy
 * paste(vector, collapse=" ") - ³¹czy elementy vector u¿ywaj¹c spacji
@@ -209,3 +209,24 @@
 * LETTERS - predefiniowana zmienna w R z wszystkimi literami
 * sample(vector1, vector3, n) - wybiera n losowych wartoœci z vector1 i vector2
 * sum(is.na(vector)) - zlicza wyst¹pienia NA licz¹c sumê vector, R traktuje TRUE jako 1 a FALSE jako 0
+* if (x > 3) {y <-10} else {y <- 0} - konstrukcja if
+* y <- if (x > 3) {10} else {0} - to te¿ jest poprawna konstrukcja
+* for (i in 1:10) {print(i)} - przykladowa konstrukcja petli for
+* x <- c("a", "b", "c", "d")
+* for (i in 1:4) {print(x[i])} - to i poni¿sze zapisy to poprawne wywo³ania funkcji for z tym samym rezlutatem
+* for (i in seq_along(x) {print(x[i])}
+* for (i in seq_along(x)) {print(x[i])}
+* for (i in 1:4) print(x[i])
+* for (i in seq_len(nrow(x))) {for (j in seq_len(ncol(x))) {print(x[i,j])}} - wypisanie kolejnych elementów macierzy
+* seq_len(n) - tworzy sekwencjê liczb od 1 do n
+* while (count<10) {print(count) count <- count+1} - przyk³¹dowa funkcja while
+* repeat - powtarza dopóki nie bêdzie komendy break
+* next - przeskakuje iteracj¹ gry spe³niony jest warunek
+* f <- function(arguments) {##kod} - stworzenie funkcji f
+* formals(function) - zwraca argumenty funkcji
+* sd(data) - oblicza odchylenie standardowe
+* ... - rozszerza listê argumentów, np. myplot <- function(x,y,type="1",...) { plot(x,y,type=type,...)}
+* args(paste) - wyœwietla sposóby wywo³ania funkcji paste, wszystko co jest po ... musi zostaæ dok³adnie podane, w funkcji paste nie ma "partial matching"
+* cat(1,2) - ³¹czy argumenty i wyœwietla
+}
+* x[C(-2,-10)] - wyœwietla wszystkie elementy wektora x poza elementem nr 2 i 10
