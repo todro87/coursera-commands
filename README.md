@@ -189,6 +189,8 @@
 * dla macierz x * y mno¿y elementy przez siebie, x/y dzieli je
 * x %*% y - mno¿enie macierzowe
 * args(function) - pokazuje argumwnty, które przyjmuje funkcja
+* list.files(dir) - wypisuje listê plików z folderu
+* dir() - wypisuje ca³¹ zawartoœæ folderu
 * dir.create("name") - tworzy katalog name w WD
 * file.create("name") - tworzy plik name
 * file.exists("name") - sprawdza czy plik name istnieje
@@ -230,3 +232,44 @@
 * cat(1,2) - ³¹czy argumenty i wyœwietla
 }
 * x[C(-2,-10)] - wyœwietla wszystkie elementy wektora x poza elementem nr 2 i 10
+* identical(arg1,arg2) - sprawdza czy argumenty funkcji s¹ identyczne
+* ls(environment(arg)) - je¿eli arg jest funkcja to sprawdza jakie elementy s¹ w niej zapisane
+* get("n", environment(arg)) - pobiera element n z œrodowiska funkcji arg
+* Sys.time() - podaje aktualny czas
+* p <- as.POSIXlt(arg) - zapisuje czas z podzia³em na h, m, s dzieñ tygodnia, mieœi¹ca, itd.
+* p$wday - odczytanie dnia tygodnia
+* names(unclass(p)) - podaje nazwy elementów z daty
+* colnames(matrix) <- names - przypisanie kolumnom macierzy nazw zapisanych w wektorze names
+* & - operator and, porównuje wartoœci z ka¿dym elementem wektora z wartoœciami logicznymi, np. TRUE & c(TRUE,FALSE,FALSE)
+* && - operator and, porównuje wartoœci z pierwszym elementem wektora z wartoœciami logicznymi
+* | - operator OR, dzia³a analogicznie do pojedyñczego &
+* || - operator OR, dzia³a analogicznie do podwójnego &&
+* isTRUE(arg) - sprawdza czy argument jest prawd¹
+* identical(arg1,arg2) - sprawdza czy dwa argumenty s¹ takie same
+* which(arg) - sprawdza,który element argumentu ma wartoœæ TRUE
+* any(arg) - zwraca TRUE gdy co najmniej jeden element argumentu ma wartoœæ TRUE
+* all(arg) - zwraca TRUE kiedy wszsystkie elementy argumentu maj¹ wartoœæ TRUE
+* sample(n) - zwraca wektor n losowych liczb, b¹dŸ wybiera losowe wartoœci z argumentu, patrz pomoc funkcji sample
+* podanie nazwy funkcji bez argumentów wyœwietla jej kod Ÿród³owy
+* evaluate(function(x){x[1]},c(8,4,0)) - przyk³ad podania funkcji anonimowej jako argumentu
+* list(...) tworzy listê z argumentu ... podawanego w kodzie funkcji
+* %p% <- function(arg1, arg2) {kod} - zdefiniowanie w³asnego operatora
+* lapply(list,func) - zastosowanie func do ka¿dego elementu listy
+* sapply(list, func) - j.w., ale zapisanie do wektora, je¿eli do funkcji zostanie podana lista wektorów to funkcja zwróci macierz
+* unique(arg) - zwraca unikatowe elementy listy
+* object.size(obj) - sprawdza iloœæ pamiêci zajmowanej przez obiekt
+* table(obj$name) - buduje tablicê z podanych obiektów
+* sample (1:20,10) - wybiera 10 losowych liczb z 20
+* sample(vector) - poprzestawia losowo elementy wektora
+* rbinom(1, size=100, prob=0.7) - losuje liczbê 0 lub 1 z p(1)=0.7
+* R ma funkjce r..... od rozk³adów losowych, d..... od gêstoœci, p..... id prowadopodobieñstwa, q..... od kwantyli
+* replicate(100,rpois(5,10)) - replikuje wynik 100 razy
+* colMeans(arg) - wylicza wartoœci œrednie kolumn
+* hist(arg) - rysuje histogram
+* unclass(date) - podaje liczbê dni od 1970-01-01
+* weekdays(date) - zwraca dzieñ tygodnia
+* months(date) - zwraca miesi¹c roku
+* quarters(date) - zwraca kwarta³ roku
+* strptime("string") - przeksta³ca datê na format akceptowany przez R
+* difftime(Sys.time(), t1, units = 'days') - podaje ró¿nicê czasu w zdefiniowanych jednostkach
+* plot(data) - robi wykres x-y danych 
