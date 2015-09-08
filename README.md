@@ -48,6 +48,7 @@
 * origin - domyœlna nazwa aktywnego repozytorium
 * git remote rm name - usuwa remote name
 * git remote rename name1 name2 - zmiana name1 na name2
+* git remote -v wyœwietla nazwy repozytoriów i przypisane im adresy
 
 ## MARKDOWN:
 
@@ -254,7 +255,7 @@
 * evaluate(function(x){x[1]},c(8,4,0)) - przyk³ad podania funkcji anonimowej jako argumentu
 * list(...) tworzy listê z argumentu ... podawanego w kodzie funkcji
 * %p% <- function(arg1, arg2) {kod} - zdefiniowanie w³asnego operatora
-* lapply(list,func) - zastosowanie func do ka¿dego elementu listy
+* lapply(list,func, ...) - zastosowanie func do ka¿dego elementu listy
 * sapply(list, func) - j.w., ale zapisanie do wektora, je¿eli do funkcji zostanie podana lista wektorów to funkcja zwróci macierz
 * unique(arg) - zwraca unikatowe elementy listy
 * object.size(obj) - sprawdza iloœæ pamiêci zajmowanej przez obiekt
@@ -273,3 +274,33 @@
 * strptime("string") - przeksta³ca datê na format akceptowany przez R
 * difftime(Sys.time(), t1, units = 'days') - podaje ró¿nicê czasu w zdefiniowanych jednostkach
 * plot(data) - robi wykres x-y danych 
+* par - zbiór parametrów do wykresu
+* pch - zbiór parametrów do punktów wykresu
+* runif - unirom random variables
+* lapply(x, function(elt) elt[,1]) - lapply z funkcja anonimow¹ (zdefiniowan¹ w lappy)
+* apply(arg, 1, func) - zastosowanie funkcji do wierszy, itp.
+* rowSums(), rowMeans(), colSums(), colMeans() - te funkcje s¹ szybsze od stosowania apply, widaæ szczególnie dla du¿y macierzy
+* array(rnorm(2*2*10), c(2,2,10)) - stworzenie macierzy z trzema wymiarami
+* mapply
+* tapply - apply dla wybranego podzbioru
+* split(arg, arg2) - dzieli argument po kategoriach w arg2
+* interaction(arg1, arg2) - robi kombinacjê danych
+* str(split(x,list(f1,f2), drop=TRUE)) - wypisanie podsumowania pogrupowanych elementów wg list(f1,f2)
+* invisible(arg) - zwraca argument w sposób niewidoczny
+* traceback() - pokazuje szczegó³y ostatniego b³êdu, który wyst¹pi³
+* debug(func) - po wywo³aniu funkcji przchodzimy do debugowania, n przeskakuje do kolejnego wiersza funkcji
+* browser
+* trace
+* recover - options(error = recover), a nastêpnie wywo³anie funkcji
+* rnorm - generacja liczb z rozk³adu normalnego
+* dnorm - gêstoœ prawdopodobieñstwa z rozk³adu normalnego
+* d - density
+* r - randorm number
+* p - cumulative distribution
+* q - quantile
+* set.seed(1) - ustawia generator liczb losowych na pocz¹tku przez co po ka¿dym ustawieniu na 1 generujemy te same liczby losowe
+* sample(1:10) - permutacja
+* sample(1:10, replacment=TRUE) - powtarzanie wylosowamych liczb
+* system.time(expr) - podaje czas potrzebny na wykonanie expr
+* Rprof() - profiler w R
+* summaryRprof() - podsumowanie dzia³ania Rprof
